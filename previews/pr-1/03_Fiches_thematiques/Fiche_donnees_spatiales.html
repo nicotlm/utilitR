@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>fiche_donnees_spatiales – utilitR</title>
 <style>
 /* Default styles provided by pandoc.
@@ -57,6 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -78,7 +82,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-880c6a0e108f8c52c745e25f2c65a73d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-6ead57c566e95c3e6e922b2cf428dee3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-880c6a0e108f8c52c745e25f2c65a73d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-880c6a0e108f8c52c745e25f2c65a73d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -104,11 +109,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script async="" src="https://hypothes.is/embed.js"></script><script>
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -134,7 +146,9 @@ window.Quarto = {
   typesetMath
 };
 </script>
+
 </head>
+
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
@@ -300,10 +314,14 @@ window.Quarto = {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../resources/logo-utilitr.png" alt="Logo du projet utilitR" class="navbar-logo light-content"><img src="../resources/logo-utilitr.png" alt="Logo du projet utilitR" class="navbar-logo dark-content"></a>
+    <img src="../resources/logo-utilitr.png" alt="Logo du projet utilitR" class="navbar-logo light-content">
+    <img src="../resources/logo-utilitr.png" alt="Logo du projet utilitR" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">utilitR</span>
     </a>
@@ -314,12 +332,12 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item dropdown ">
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-introduction" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Introduction</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-introduction">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-introduction">    
+        <li>
     <a class="dropdown-item" href="../01_R_Insee/presentation_utilitr.html">
  <span class="dropdown-text">Présentation du projet utilitR</span></a>
   </li>  
@@ -328,13 +346,13 @@ window.Quarto = {
  <span class="dropdown-text">Comment utiliser la documentation utilitR</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-commencer-son-projet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Commencer son projet</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-commencer-son-projet">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-commencer-son-projet">    
+        <li>
     <a class="dropdown-item" href="../03_Fiches_thematiques/Fiche_rprojects.html">
  <span class="dropdown-text">Utiliser les projets RStudio</span></a>
   </li>  
@@ -367,13 +385,13 @@ window.Quarto = {
  <span class="dropdown-text">Chaîne de traitement avec targets</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-importer-des-données" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Importer des données</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-importer-des-données">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-importer-des-données">    
+        <li>
     <a class="dropdown-item" href="../03_Fiches_thematiques/Fiche_import_fichiers_plats.html">
  <span class="dropdown-text">Importer des fichiers plats (csv, tsv, txt)</span></a>
   </li>  
@@ -398,13 +416,13 @@ window.Quarto = {
  <span class="dropdown-text">Se connecter à une base de données</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manipuler-des-données" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Manipuler des données</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-manipuler-des-données">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-manipuler-des-données">    
+        <li>
     <a class="dropdown-item" href="../03_Fiches_thematiques/Fiche_tidyverse.html">
  <span class="dropdown-text">Manipuler avec le tidyverse</span></a>
   </li>  
@@ -445,13 +463,13 @@ window.Quarto = {
  <span class="dropdown-text">L’analyse de données (ACP, ACM…)</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-produire-des-sorties" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Produire des sorties</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-produire-des-sorties">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-produire-des-sorties">    
+        <li>
     <a class="dropdown-item" href="../03_Fiches_thematiques/Fiche_graphiques.html">
  <span class="dropdown-text">Faire des graphiques avec ggplot2</span></a>
   </li>  
@@ -464,13 +482,13 @@ window.Quarto = {
  <span class="dropdown-text">Rapports automatisés avec R Markdown</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bonnes-pratiques" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Bonnes pratiques</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-bonnes-pratiques">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-bonnes-pratiques">    
+        <li>
     <a class="dropdown-item" href="../02_Bonnes_pratiques/01-qualite-code.html">
  <span class="dropdown-text">Qualité du code</span></a>
   </li>  
@@ -479,13 +497,13 @@ window.Quarto = {
  <span class="dropdown-text">Structure des projets</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-configuration" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Configuration</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-configuration">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-configuration">    
+        <li>
     <a class="dropdown-item" href="../01_R_Insee/Fiche_utiliser_Rstudio_AUSv3.html">
  <span class="dropdown-text">Utiliser RStudio sur AUSv3</span></a>
   </li>  
@@ -502,47 +520,56 @@ window.Quarto = {
  <span class="dropdown-text">Superviser sa session R</span></a>
   </li>  
     </ul>
-</li>
+  </li>
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-<li>
-<a href="#spatdata" id="toc-spatdata" class="nav-link active" data-scroll-target="#spatdata">Manipuler des données spatiales</a>
+  <li><a href="#spatdata" id="toc-spatdata" class="nav-link active" data-scroll-target="#spatdata">Manipuler des données spatiales</a>
   <ul class="collapse">
-<li><a href="#t%C3%A2ches-concern%C3%A9es-et-recommandations" id="toc-tâches-concernées-et-recommandations" class="nav-link" data-scroll-target="#t%C3%A2ches-concern%C3%A9es-et-recommandations">Tâches concernées et recommandations</a></li>
-  <li><a href="#d%C3%A9finition-des-donn%C3%A9es-spatiales" id="toc-définition-des-données-spatiales" class="nav-link" data-scroll-target="#d%C3%A9finition-des-donn%C3%A9es-spatiales">Définition des données spatiales</a></li>
-  <li>
-<a href="#comment-utiliser-le-package-sf" id="toc-comment-utiliser-le-package-sf" class="nav-link" data-scroll-target="#comment-utiliser-le-package-sf">Comment utiliser le <em>package</em> <code>sf</code></a>
+  <li><a href="#tâches-concernées-et-recommandations" id="toc-tâches-concernées-et-recommandations" class="nav-link" data-scroll-target="#tâches-concernées-et-recommandations">Tâches concernées et recommandations</a></li>
+  <li><a href="#définition-des-données-spatiales" id="toc-définition-des-données-spatiales" class="nav-link" data-scroll-target="#définition-des-données-spatiales">Définition des données spatiales</a></li>
+  <li><a href="#comment-utiliser-le-package-sf" id="toc-comment-utiliser-le-package-sf" class="nav-link" data-scroll-target="#comment-utiliser-le-package-sf">Comment utiliser le <em>package</em> <code>sf</code></a>
   <ul class="collapse">
-<li><a href="#cr%C3%A9er-une-table-de-donn%C3%A9es-spatiales" id="toc-créer-une-table-de-données-spatiales" class="nav-link" data-scroll-target="#cr%C3%A9er-une-table-de-donn%C3%A9es-spatiales">Créer une table de données spatiales</a></li>
+  <li><a href="#créer-une-table-de-données-spatiales" id="toc-créer-une-table-de-données-spatiales" class="nav-link" data-scroll-target="#créer-une-table-de-données-spatiales">Créer une table de données spatiales</a></li>
   <li><a href="#structure-dun-objet-sf" id="toc-structure-dun-objet-sf" class="nav-link" data-scroll-target="#structure-dun-objet-sf">Structure d’un objet <code>sf</code></a></li>
-  <li><a href="#effectuer-des-op%C3%A9rations-sur-un-objet-sf" id="toc-effectuer-des-opérations-sur-un-objet-sf" class="nav-link" data-scroll-target="#effectuer-des-op%C3%A9rations-sur-un-objet-sf">Effectuer des opérations sur un objet <code>sf</code></a></li>
-  <li><a href="#effectuer-des-op%C3%A9rations-sur-les-g%C3%A9om%C3%A9tries-dun-objet-g%C3%A9om%C3%A9trique" id="toc-effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique" class="nav-link" data-scroll-target="#effectuer-des-op%C3%A9rations-sur-les-g%C3%A9om%C3%A9tries-dun-objet-g%C3%A9om%C3%A9trique">Effectuer des opérations sur les géométries d’un objet géométrique</a></li>
-  <li><a href="#joindre-des-donn%C3%A9es-g%C3%A9ographiques-et-attributaires" id="toc-joindre-des-données-géographiques-et-attributaires" class="nav-link" data-scroll-target="#joindre-des-donn%C3%A9es-g%C3%A9ographiques-et-attributaires">Joindre des données géographiques et attributaires</a></li>
-  <li><a href="#g%C3%A9rer-le-syst%C3%A8me-de-projection" id="toc-gérer-le-système-de-projection" class="nav-link" data-scroll-target="#g%C3%A9rer-le-syst%C3%A8me-de-projection">Gérer le système de projection</a></li>
-  </ul>
-</li>
+  <li><a href="#effectuer-des-opérations-sur-un-objet-sf" id="toc-effectuer-des-opérations-sur-un-objet-sf" class="nav-link" data-scroll-target="#effectuer-des-opérations-sur-un-objet-sf">Effectuer des opérations sur un objet <code>sf</code></a></li>
+  <li><a href="#effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique" id="toc-effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique" class="nav-link" data-scroll-target="#effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique">Effectuer des opérations sur les géométries d’un objet géométrique</a></li>
+  <li><a href="#joindre-des-données-géographiques-et-attributaires" id="toc-joindre-des-données-géographiques-et-attributaires" class="nav-link" data-scroll-target="#joindre-des-données-géographiques-et-attributaires">Joindre des données géographiques et attributaires</a></li>
+  <li><a href="#gérer-le-système-de-projection" id="toc-gérer-le-système-de-projection" class="nav-link" data-scroll-target="#gérer-le-système-de-projection">Gérer le système de projection</a></li>
+  </ul></li>
   <li><a href="#pour-aller-plus-loin" id="toc-pour-aller-plus-loin" class="nav-link" data-scroll-target="#pour-aller-plus-loin">Pour aller plus loin</a></li>
-  <li><a href="#o%C3%B9-trouver-des-donn%C3%A9es-g%C3%A9ographiques-et-des-shapefiles" id="toc-où-trouver-des-données-géographiques-et-des-shapefiles" class="nav-link" data-scroll-target="#o%C3%B9-trouver-des-donn%C3%A9es-g%C3%A9ographiques-et-des-shapefiles">Où trouver des données géographiques et des <em>shapefiles</em> ?</a></li>
+  <li><a href="#où-trouver-des-données-géographiques-et-des-shapefiles" id="toc-où-trouver-des-données-géographiques-et-des-shapefiles" class="nav-link" data-scroll-target="#où-trouver-des-données-géographiques-et-des-shapefiles">Où trouver des données géographiques et des <em>shapefiles</em> ?</a></li>
   <li><a href="#RessourcesDonneesSpatiales" id="toc-RessourcesDonneesSpatiales" class="nav-link" data-scroll-target="#RessourcesDonneesSpatiales">Pour en savoir plus</a></li>
+  </ul></li>
   </ul>
-</li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/utilitR/edit/main/03_Fiches_thematiques/Fiche_donnees_spatiales.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/InseeFrLab/utilitR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/utilitR/edit/main/03_Fiches_thematiques/Fiche_donnees_spatiales.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/InseeFrLab/utilitR/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header><section id="spatdata" class="level1"><h1>Manipuler des données spatiales</h1>
-<section id="tâches-concernées-et-recommandations" class="level2"><h2 class="anchored" data-anchor-id="tâches-concernées-et-recommandations">Tâches concernées et recommandations</h2>
-<p>L’utilisateur souhaite traiter avec <code>R</code> des données spatiales (données géolocalisées, polygones…). Si vous ne savez pas si cette fiche répond à votre besoin, les données spatiales sont définies dans le paragraphe <a href="#d%C3%A9finition-des-donn%C3%A9es-spatiales">Définition des données spatiales</a>.</p>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+
+<section id="spatdata" class="level1">
+<h1>Manipuler des données spatiales</h1>
+<section id="tâches-concernées-et-recommandations" class="level2">
+<h2 class="anchored" data-anchor-id="tâches-concernées-et-recommandations">Tâches concernées et recommandations</h2>
+<p>L’utilisateur souhaite traiter avec <code>R</code> des données spatiales (données géolocalisées, polygones…). Si vous ne savez pas si cette fiche répond à votre besoin, les données spatiales sont définies dans le paragraphe <a href="#définition-des-données-spatiales">Définition des données spatiales</a>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -554,15 +581,15 @@ window.Quarto = {
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>
-<strong>Il est recommandé d’utiliser le <em>package</em> <code>sf</code> qui couvre les principaux besoins</strong> (lecture des formats de données géographiques, traitements des données spatiales, représentations graphiques et cartographiques) ;</li>
-<li>
-<strong>Sauf cas particuliers, il est recommandé de ne pas utiliser le <em>package</em> <code>sp</code>, qui est rendu obsolète par <code>sf</code></strong> ;</li>
+<li><strong>Il est recommandé d’utiliser le <em>package</em> <code>sf</code> qui couvre les principaux besoins</strong> (lecture des formats de données géographiques, traitements des données spatiales, représentations graphiques et cartographiques) ;</li>
+<li><strong>Sauf cas particuliers, il est recommandé de ne pas utiliser le <em>package</em> <code>sp</code>, qui est rendu obsolète par <code>sf</code></strong> ;</li>
 <li>Selon le besoin exact, plusieurs autres <em>packages</em> proposent des fonctionnalités complémentaires (voir section <a href="#pour-aller-plus-loin">Pour aller plus loin</a>).</li>
 </ul>
 </div>
 </div>
-</section><section id="définition-des-données-spatiales" class="level2"><h2 class="anchored" data-anchor-id="définition-des-données-spatiales">Définition des données spatiales</h2>
+</section>
+<section id="définition-des-données-spatiales" class="level2">
+<h2 class="anchored" data-anchor-id="définition-des-données-spatiales">Définition des données spatiales</h2>
 <p><strong>Le terme “données spatiales” désigne les données qui portent sur les caractéristiques géographiques des objets (localisation, contours, liens)</strong>. Les caractéristiques géographiques des objets sont décrites à l’aide d’un <strong>système de coordonnées</strong> qui permettent une représentation dans un espace euclidien (<span class="math inline">\((x,y)\)</span>). Le passage de l’espace réel (la Terre, qui est une sphère) à l’espace plan se fait grâce à un <strong>système de projection</strong>. Voici quelques exemples de données spatiales :</p>
 <ul>
 <li>Une table décrivant des bâtiments, avec les coordonnées géographiques de chaque bâtiment ;</li>
@@ -577,15 +604,13 @@ window.Quarto = {
 <p><strong>Les données spatiales sont fréquemment traitées à l’aide d’un système d’information géographique (SIG)</strong>, c’est-à-dire un système d’information capable de stocker, d’organiser et de présenter des données alphanumériques spatialement référencées par des coordonnées dans un système de référence (CRS). <code>R</code> dispose de fonctionnalités lui permettant de réaliser les mêmes tâches qu’un SIG (traitement de données spatiales, représentations cartographiques).</p>
 <p><strong>Les systèmes de projection font l’objet de standards internationaux et sont souvent désignés par des codes dits <em>codes EPSG</em> </strong>. Ce <a href="https://epsg.io/">site</a> est un bon aide-mémoire. Les plus fréquents, pour les utilisateurs français, sont les suivants (plus d’infos <a href="https://geodesie.ign.fr/contenu/fichiers/documentation/SRCfrance.pdf">ici</a>) :</p>
 <ul>
-<li>
-<code>2154</code> : système de projection Lambert 93. Il s’agit du système de projection officiel : la plupart des données diffusées par l’administration pour la métropole sont disponibles dans ce système de projection.</li>
-<li>
-<code>4326</code> : WGS 84 ou système de pseudo-Mercator. C’est le système de projection des données GPS. <!-- est ce vraiment un système de projecton ? -->
-</li>
-<li>
-<code>27572</code> : Lambert II étendu. Il s’agit de l’ancien système de projection officiel. Les données spatiales anciennes peuvent être dans ce format.</li>
-</ul></section><section id="comment-utiliser-le-package-sf" class="level2"><h2 class="anchored" data-anchor-id="comment-utiliser-le-package-sf">Comment utiliser le <em>package</em> <code>sf</code>
-</h2>
+<li><code>2154</code> : système de projection Lambert 93. Il s’agit du système de projection officiel : la plupart des données diffusées par l’administration pour la métropole sont disponibles dans ce système de projection.</li>
+<li><code>4326</code> : WGS 84 ou système de pseudo-Mercator. C’est le système de projection des données GPS. <!-- est ce vraiment un système de projecton ? --></li>
+<li><code>27572</code> : Lambert II étendu. Il s’agit de l’ancien système de projection officiel. Les données spatiales anciennes peuvent être dans ce format.</li>
+</ul>
+</section>
+<section id="comment-utiliser-le-package-sf" class="level2">
+<h2 class="anchored" data-anchor-id="comment-utiliser-le-package-sf">Comment utiliser le <em>package</em> <code>sf</code></h2>
 <p>Le <em>package</em> <code>sf</code> est une boîte à outils conçue pour faciliter la manipulation de données spatiales. <strong>La grande force de <code>sf</code> est qu’il permet de manipuler des données spatiales comme s’il s’agissait de données traditionnelles</strong>, car il repose sur le standard ISO 19125 <a href="https://en.wikipedia.org/wiki/Simple_Features"><em>simple feature access</em></a> défini conjointement par l’<em>Open Geospatial Consortium (OGC)</em> et l’<em>International Organization for Standardization (ISO)</em>. Cette fiche illustre l’usage de <code>sf</code> avec le jeu de données <code>martinique</code> du package <code>cartography</code>.</p>
 <p>Les fonctions de <code>sf</code> sont pour la plupart préfixées par <code>st_</code> <em>(Spatial Type)</em> et permettent notamment de :</p>
 <ul>
@@ -608,75 +633,79 @@ Note
 <p>Le <em>package</em> <code>sf</code> est une extension du <em>package</em> <code>dplyr</code> pour les objets géographiques. On peut donc utiliser le <em>pipe</em> (<code>%&gt;%</code>) pour chaîner des opérations avec <code>sf</code>, ce qui est souvent pratique (voir la fiche <a href="https://book.utilitr.org/03_Fiches_thematiques/Fiche_tidyverse.html#encha%C3%AEner-les-manipulations-avec-lop%C3%A9rateur-pipe">Manipuler des données avec le tidyverse</a>).</p>
 </div>
 </div>
-<section id="créer-une-table-de-données-spatiales" class="level3"><h3 class="anchored" data-anchor-id="créer-une-table-de-données-spatiales">Créer une table de données spatiales</h3>
+<section id="créer-une-table-de-données-spatiales" class="level3">
+<h3 class="anchored" data-anchor-id="créer-une-table-de-données-spatiales">Créer une table de données spatiales</h3>
 <p>Créer une table de données spatiales avec <code>sf</code> est très simple. Il y a deux méthodes, selon que les données spatiales sont directement disponibles dans un format de données géographiques (par un exemple un fichier <code>shapefile</code>) ou dans un fichier de données tabulées (par exemple un fichier <code>.csv</code>).</p>
-<section id="importer-des-fichiers-de-données-géographiques" class="level4"><h4 class="anchored" data-anchor-id="importer-des-fichiers-de-données-géographiques">Importer des fichiers de données géographiques</h4>
-<p>La fonction <strong><code><a href="https://r-spatial.github.io/sf/reference/st_read.html">sf::st_read()</a></code></strong> permet de lire différents formats de données géographiques. Les paramètres attendus par la fonction sont :</p>
+<section id="importer-des-fichiers-de-données-géographiques" class="level4">
+<h4 class="anchored" data-anchor-id="importer-des-fichiers-de-données-géographiques">Importer des fichiers de données géographiques</h4>
+<p>La fonction <strong><code>sf::st_read()</code></strong> permet de lire différents formats de données géographiques. Les paramètres attendus par la fonction sont :</p>
 <ul>
-<li>
-<code>dsn</code>, le nom de la source de donnée (nom du fichier ou chemin vers le répertoire contenant les données géographiques). Le format le plus commun est le <code>.shp</code> mais <code>sf</code> peut lire d’autres formats (<code>.map</code>, <code>.geojson</code>…) ;</li>
-<li>
-<code>layer</code>, le nom de la couche. Ce paramètre est facultatif si les données ne contiennent qu’une seule couche ;</li>
-<li>
-<code>crs</code>, pour définir le système de projection. Ce paramètre est facultatif. Si le système de projection a été défini à l’écriture du fichier, <code>sf</code> peut le repérer automatiquement à la lecture. Sinon, il faut le définir à la lecture avec l’argument <code>crs</code>.</li>
+<li><code>dsn</code>, le nom de la source de donnée (nom du fichier ou chemin vers le répertoire contenant les données géographiques). Le format le plus commun est le <code>.shp</code> mais <code>sf</code> peut lire d’autres formats (<code>.map</code>, <code>.geojson</code>…) ;</li>
+<li><code>layer</code>, le nom de la couche. Ce paramètre est facultatif si les données ne contiennent qu’une seule couche ;</li>
+<li><code>crs</code>, pour définir le système de projection. Ce paramètre est facultatif. Si le système de projection a été défini à l’écriture du fichier, <code>sf</code> peut le repérer automatiquement à la lecture. Sinon, il faut le définir à la lecture avec l’argument <code>crs</code>.</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Installation du package cartography</span></span>
-<span><span class="co"># install.packages("cartography")</span></span>
-<span></span>
-<span><span class="co"># Charger les données sur la Martinique</span></span>
-<span><span class="va">martinique</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html">st_read</a></span><span class="op">(</span></span>
-<span>  dsn <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html">system.file</a></span><span class="op">(</span><span class="st">"gpkg/mtq.gpkg"</span>, package<span class="op">=</span><span class="st">"cartography"</span><span class="op">)</span>,</span>
-<span>  quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation du package cartography</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("cartography")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger les données sur la Martinique</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>martinique <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_read</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">dsn =</span> <span class="fu">system.file</span>(<span class="st">"gpkg/mtq.gpkg"</span>, <span class="at">package=</span><span class="st">"cartography"</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="reconstituer-des-données-géographiques-à-partir-de-données-brutes" class="level4"><h4 class="anchored" data-anchor-id="reconstituer-des-données-géographiques-à-partir-de-données-brutes">Reconstituer des données géographiques à partir de données brutes</h4>
+</section>
+<section id="reconstituer-des-données-géographiques-à-partir-de-données-brutes" class="level4">
+<h4 class="anchored" data-anchor-id="reconstituer-des-données-géographiques-à-partir-de-données-brutes">Reconstituer des données géographiques à partir de données brutes</h4>
 <p>Il peut arriver que les données géographiques ne soient pas stockées dans un format adapté. Par exemple, vous pouvez disposer d’un fichier <code>.csv</code> qui contient une table géolocalisée de logements avec leurs caractéristiques. En ce cas, vous pouvez créer une table de données géographiques en deux temps :</p>
 <ul>
 <li><p>Importer les données brutes (ou tabulées, cf + haut) dans <code>R</code> voir la fiche [Importer des fichiers plats (<code>.csv</code>, <code>.tsv</code>, <code>.txt</code>)] ;</p></li>
-<li>
-<p>Transformer le <code>data.frame</code> en objet <code>sf</code> grâce à la commande <code><a href="https://r-spatial.github.io/sf/reference/st_geometry.html">sf::st_set_geometry()</a></code>. Par exemple, si les variables <code>lon</code> et <code>lat</code> contiennent des données GPS (code epsg <code>4326</code>) alors on peut faire :</p>
+<li><p>Transformer le <code>data.frame</code> en objet <code>sf</code> grâce à la commande <code>sf::st_set_geometry()</code>. Par exemple, si les variables <code>lon</code> et <code>lat</code> contiennent des données GPS (code epsg <code>4326</code>) alors on peut faire :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df_spatial</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_as_sf.html">st_as_sf</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">df</span>,                         </span>
-<span>             coords <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"lon"</span>, <span class="st">"lat"</span><span class="op">)</span>,</span>
-<span>             crs <span class="op">=</span> <span class="fl">4326</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</li>
-</ul></section></section><section id="structure-dun-objet-sf" class="level3"><h3 class="anchored" data-anchor-id="structure-dun-objet-sf">Structure d’un objet <code>sf</code>
-</h3>
-<p>La commande <code><a href="https://rdrr.io/r/utils/head.html">head()</a></code> fait apparaître la structure de l’objet <code>sf</code> <code>martinique</code>. L’en-tête précise le type de <code>geometry</code> (<code>polygon</code>, en l’occurrence le contour des communes), et le système de projection (<code>WGS 84 / UTM zone 20N</code>). La table de données contient la liste des communes avec leurs caractéristiques (nom, population…). Enfin, la dernière colonne (<code>geometry</code>) contient l’information géographique (le contour des communes).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_spatial <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(<span class="at">x =</span> df,                         </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">coords =</span> <span class="fu">c</span>(<span class="st">"lon"</span>, <span class="st">"lat"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">crs =</span> <span class="dv">4326</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></li>
+</ul>
+</section>
+</section>
+<section id="structure-dun-objet-sf" class="level3">
+<h3 class="anchored" data-anchor-id="structure-dun-objet-sf">Structure d’un objet <code>sf</code></h3>
+<p>La commande <code>head()</code> fait apparaître la structure de l’objet <code>sf</code> <code>martinique</code>. L’en-tête précise le type de <code>geometry</code> (<code>polygon</code>, en l’occurrence le contour des communes), et le système de projection (<code>WGS 84 / UTM zone 20N</code>). La table de données contient la liste des communes avec leurs caractéristiques (nom, population…). Enfin, la dernière colonne (<code>geometry</code>) contient l’information géographique (le contour des communes).</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">martinique</span>, <span class="fl">3</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(martinique, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Pour revenir à un <code>dataframe</code> traditionnel, c’est-à-dire sans la dimension géographique, la manière la plus simple est de rendre nulle la géométrie grâce à la commande <strong><code>sf::drop_geometry</code></strong>. Exemple : <code>martinique &lt;- martinique %&gt;% sf::st_drop_geometry()</code>.</p>
-<p>On peut produire très rapidement une représentation cartographique d’un attribut avec la fonction <code><a href="https://rdrr.io/r/graphics/plot.default.html">plot()</a></code> :</p>
+<p>On peut produire très rapidement une représentation cartographique d’un attribut avec la fonction <code>plot()</code> :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Produire une carte de la population par commune</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">martinique</span><span class="op">[</span><span class="st">'POP'</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Produire une carte de la population par commune</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(martinique[<span class="st">'POP'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="effectuer-des-opérations-sur-un-objet-sf" class="level3"><h3 class="anchored" data-anchor-id="effectuer-des-opérations-sur-un-objet-sf">Effectuer des opérations sur un objet <code>sf</code>
-</h3>
-<section id="effectuer-des-opérations-sur-les-attributs" class="level4"><h4 class="anchored" data-anchor-id="effectuer-des-opérations-sur-les-attributs">Effectuer des opérations sur les attributs</h4>
-<p><strong>Il est possible d’appliquer aux attributs des objets <code>sf</code> les fonctions de la grammaire <code>dplyr</code></strong> comme si l’objet était un <code>data.frame</code> standard. On peut ainsi sélectionner un sous-champ de la base avec <code><a href="https://dplyr.tidyverse.org/reference/filter.html">dplyr::filter()</a></code>, faire du tri avec <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">dplyr::arrange()</a></code> et créer de nouvelles variables avec <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">dplyr::mutate()</a></code> :</p>
+</section>
+<section id="effectuer-des-opérations-sur-un-objet-sf" class="level3">
+<h3 class="anchored" data-anchor-id="effectuer-des-opérations-sur-un-objet-sf">Effectuer des opérations sur un objet <code>sf</code></h3>
+<section id="effectuer-des-opérations-sur-les-attributs" class="level4">
+<h4 class="anchored" data-anchor-id="effectuer-des-opérations-sur-les-attributs">Effectuer des opérations sur les attributs</h4>
+<p><strong>Il est possible d’appliquer aux attributs des objets <code>sf</code> les fonctions de la grammaire <code>dplyr</code></strong> comme si l’objet était un <code>data.frame</code> standard. On peut ainsi sélectionner un sous-champ de la base avec <code>dplyr::filter()</code>, faire du tri avec <code>dplyr::arrange()</code> et créer de nouvelles variables avec <code>dplyr::mutate()</code> :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">grandes_villes_martinique</span> <span class="op">&lt;-</span> <span class="va">martinique</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">POP</span> <span class="op">&gt;</span> <span class="fl">10000</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">POP</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>log_pop <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">POP</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>grandes_villes_martinique <span class="ot">&lt;-</span> martinique <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(POP <span class="sc">&gt;</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(POP) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">log_pop =</span> <span class="fu">log</span>(POP))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>On peut également appliquer des fonctions de statistiques descriptives avec <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">dplyr::summarise()</a></code> et construire des groupes avec <code><a href="https://dplyr.tidyverse.org/reference/group_by.html">dplyr::group_by()</a></code>. Le <code>group_by()</code> sur un objet spatial va également agréger les géométries : il va créer une nouvelle géométrie recoupant l’ensemble des points, des lignes ou des polygones appartenant au groupe. Par exemple, on peut construire très facilement une géométrie plus agrégée par regroupement des géométries plus fines. Imaginons que la table de données sur la Martinique comprend deux groupes : les villes de plus de 10 000 habitants et celles de moins de 10 000 habitants. On désire faire la somme de la variable <code>POP</code> pour chaque groupe. Dans ce cas, après avoir créé les groupes, on va effectuer un <code>group_by()</code> puis un <code>summarise()</code> :</p>
+<p>On peut également appliquer des fonctions de statistiques descriptives avec <code>dplyr::summarise()</code> et construire des groupes avec <code>dplyr::group_by()</code>. Le <code>group_by()</code> sur un objet spatial va également agréger les géométries : il va créer une nouvelle géométrie recoupant l’ensemble des points, des lignes ou des polygones appartenant au groupe. Par exemple, on peut construire très facilement une géométrie plus agrégée par regroupement des géométries plus fines. Imaginons que la table de données sur la Martinique comprend deux groupes : les villes de plus de 10 000 habitants et celles de moins de 10 000 habitants. On désire faire la somme de la variable <code>POP</code> pour chaque groupe. Dans ce cas, après avoir créé les groupes, on va effectuer un <code>group_by()</code> puis un <code>summarise()</code> :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">martinique_agg</span> <span class="op">&lt;-</span> <span class="va">martinique</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>group <span class="op">=</span> <span class="op">(</span><span class="va">POP</span> <span class="op">&lt;</span> <span class="fl">10000</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">group</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>POP <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">POP</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">martinique_agg</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>martinique_agg <span class="ot">&lt;-</span> martinique <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">group =</span> (POP <span class="sc">&lt;</span> <span class="dv">10000</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(group) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">POP =</span> <span class="fu">sum</span>(POP))</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(martinique_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Le résultat est analogue à celui qu’on obtiendrait avec un<code>data.frame</code>, à l’exception de la colonne <code>geometry</code>. L’agrégation d’une géométrie de nature <code>POLYGON</code> aboutit à une colonne de format <code>MULTIPOLYGON</code> qui agrège des polygones. La représentation graphique rend plus évidente cette agrégation :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">martinique</span><span class="op">[</span><span class="st">'POP'</span><span class="op">]</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">martinique_agg</span><span class="op">[</span><span class="st">'POP'</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(martinique[<span class="st">'POP'</span>])</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(martinique_agg[<span class="st">'POP'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -691,30 +720,40 @@ Tip
 <p>Les manipulations de données sur un <code>sf</code> sont nettement plus lentes que sur un <code>data.frame</code> traditionnel (car <code>R</code> doit gérer les informations géographiques pendant la manipulation des données). Lorsque vous manipulez des données de grandes dimensions, il peut être préférable d’effectuer les opérations sur les données <em>avant</em> de joindre une géométrie à celles-ci.</p>
 </div>
 </div>
-</section></section><section id="effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique" class="level3"><h3 class="anchored" data-anchor-id="effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique">Effectuer des opérations sur les géométries d’un objet géométrique</h3>
+</section>
+</section>
+<section id="effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique" class="level3">
+<h3 class="anchored" data-anchor-id="effectuer-des-opérations-sur-les-géométries-dun-objet-géométrique">Effectuer des opérations sur les géométries d’un objet géométrique</h3>
 <p><code>sf</code> propose de nombreuses fonctions pour manipuler la dimension spatiale. On en trouve un certain nombre <a href="https://r-spatial.github.io/sf/reference/geos_unary.html">ici</a> et <a href="https://r-spatial.github.io/sf/reference/geos_binary_ops.html">ici</a>.</p>
 <!---CommOM : je mettrais bien ici un petit tableau avec quelques fonctions, leurs arguments et la description de ce qu'elles font.--->
-<p>Par exemple, on peut calculer la superficie d’un polygone avec <code><a href="https://r-spatial.github.io/sf/reference/geos_measures.html">sf::st_area()</a></code>. Si l’unité ne convient pas, il est possible de convertir cette superficie en <span class="math inline">\(km^2\)</span> :</p>
+<p>Par exemple, on peut calculer la superficie d’un polygone avec <code>sf::st_area()</code>. Si l’unité ne convient pas, il est possible de convertir cette superficie en <span class="math inline">\(km^2\)</span> :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">martinique</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>area <span class="op">=</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/geos_measures.html">st_area</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu">units</span><span class="fu">::</span><span class="fu"><a href="https://r-quantities.github.io/units/reference/units.html">set_units</a></span><span class="op">(</span><span class="va">area</span>, <span class="va">km</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>martinique <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">area =</span> sf<span class="sc">::</span><span class="fu">st_area</span>(.)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">x =</span> units<span class="sc">::</span><span class="fu">set_units</span>(area, km<span class="sc">^</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="joindre-des-données-géographiques-et-attributaires" class="level3"><h3 class="anchored" data-anchor-id="joindre-des-données-géographiques-et-attributaires">Joindre des données géographiques et attributaires</h3>
-<section id="jointure-sur-des-attributs" class="level4"><h4 class="anchored" data-anchor-id="jointure-sur-des-attributs">Jointure sur des attributs</h4>
+</section>
+<section id="joindre-des-données-géographiques-et-attributaires" class="level3">
+<h3 class="anchored" data-anchor-id="joindre-des-données-géographiques-et-attributaires">Joindre des données géographiques et attributaires</h3>
+<section id="jointure-sur-des-attributs" class="level4">
+<h4 class="anchored" data-anchor-id="jointure-sur-des-attributs">Jointure sur des attributs</h4>
 <p>On peut effectuer une jointure sur un objet (ou deux) objet(s) <code>sf</code> en fonction d’une ou plusieurs variables communes. Dans ce cas, on parle de jointure attributaire. Ces opérations peuvent être effectuées comme si les objets <code>sf</code> étaient des <code>data.frames</code> traditionnels avec les fonctions <code>dplyr::_*join</code>.</p>
-</section><section id="jointure-à-partir-de-la-géométrie" class="level4"><h4 class="anchored" data-anchor-id="jointure-à-partir-de-la-géométrie">Jointure à partir de la géométrie</h4>
-<p>Deux objets géométriques peuvent également être associés en fonction de leur dimension spatiale. Par exemple, les fonctions ci-dessous renvoient des <code>TRUE</code>/<code>FALSE</code> pour chaque couple de géométrie des bases <code>x</code> et <code>y</code> (il y en a beaucoup d’autres, voir <code><a href="https://r-spatial.github.io/sf/reference/geos_binary_pred.html">?sf::geos_binary_pred</a></code>) :</p>
+</section>
+<section id="jointure-à-partir-de-la-géométrie" class="level4">
+<h4 class="anchored" data-anchor-id="jointure-à-partir-de-la-géométrie">Jointure à partir de la géométrie</h4>
+<p>Deux objets géométriques peuvent également être associés en fonction de leur dimension spatiale. Par exemple, les fonctions ci-dessous renvoient des <code>TRUE</code>/<code>FALSE</code> pour chaque couple de géométrie des bases <code>x</code> et <code>y</code> (il y en a beaucoup d’autres, voir <code>?sf::geos_binary_pred</code>) :</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 74%">
 </colgroup>
-<thead><tr class="header">
+<thead>
+<tr class="header">
 <th>Fonction</th>
 <th>Opération</th>
-</tr></thead>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td><code>st_intersects()</code></td>
@@ -734,7 +773,7 @@ Tip
 </tr>
 </tbody>
 </table>
-<p>La fonction <code><a href="https://r-spatial.github.io/sf/reference/st_join.html">sf::st_join()</a></code> permet d’appliquer ces fonctions pour réaliser la jointure à partir de la dimension spatiale. Deux arguments sont importants :</p>
+<p>La fonction <code>sf::st_join()</code> permet d’appliquer ces fonctions pour réaliser la jointure à partir de la dimension spatiale. Deux arguments sont importants :</p>
 <ul>
 <li>l’argument <code>join =</code> indique la méthode à utiliser pour la jointure. Par défaut, la méthode est <code>st_intersects</code>, ce qui signifie que la table de sortie contient une observation pour chaque couple de géométrie qui a une intersection non vide ;</li>
 <li>On utilise l’argument <code>left = TRUE</code> si on désire effectuer une jointure sur la gauche (par défaut, un <code>inner join</code> est effectué).</li>
@@ -772,44 +811,46 @@ Tip
 <p>Une fonction <code>R</code> réalisant une jointure spatiale entre carreaux et zones est déjà disponible <a href="https://www.insee.fr/fr/statistiques/4176290?sommaire=4176305">sur le site de l’Insee</a>. Le principe de la fonction consiste à déterminer, pour une zone donnée, l’ensemble des carreaux qui la recouvrent puis à calculer les agrégats sur cet ensemble de carreaux. En plus des agrégats, elle permet de calculer, pour chaque zone, la part de la population vivant dans des carreaux imputés, ce qui donne une idée de la fiabilité des résultats obtenus.</p>
 </div>
 </div>
-</section></section><section id="gérer-le-système-de-projection" class="level3"><h3 class="anchored" data-anchor-id="gérer-le-système-de-projection">Gérer le système de projection</h3>
-<p>Le système de projection est fondamental pour que la dimension spatiale soit bien interprétée par <code>R</code>. Si un système de projection est défini, il s’affiche dans la ligne <code>Projected CRS</code> lorsqu’on applique la fonction <code><a href="https://rdrr.io/r/utils/head.html">head()</a></code> à un objet <code>sf</code>. Pour vérifier le système de projection d’une base de données, on peut utiliser <code><a href="https://r-spatial.github.io/sf/reference/st_crs.html">sf::st_crs</a></code> :</p>
+</section>
+</section>
+<section id="gérer-le-système-de-projection" class="level3">
+<h3 class="anchored" data-anchor-id="gérer-le-système-de-projection">Gérer le système de projection</h3>
+<p>Le système de projection est fondamental pour que la dimension spatiale soit bien interprétée par <code>R</code>. Si un système de projection est défini, il s’affiche dans la ligne <code>Projected CRS</code> lorsqu’on applique la fonction <code>head()</code> à un objet <code>sf</code>. Pour vérifier le système de projection d’une base de données, on peut utiliser <code>sf::st_crs</code> :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_crs.html">st_crs</a></span><span class="op">(</span><span class="va">martinique</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sf<span class="sc">::</span><span class="fu">st_crs</span>(martinique)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Les deux principales fonctions pour définir le système de projection utilisé sont :</p>
 <ul>
-<li>
-<strong><code><a href="https://r-spatial.github.io/sf/reference/st_crs.html">sf::st_set_crs</a></code></strong> : cette commande sert à préciser quel est le système de projection utilisé, c’est-à-dire comment les coordonnées <em>(x,y)</em> sont reliées à la surface terrestre. <strong>Cette commande ne doit pas être utilisée pour transformer le système de coordonnées, seulement pour le définir</strong>.</li>
-<li>
-<strong><code><a href="https://r-spatial.github.io/sf/reference/st_transform.html">sf::st_transform</a></code></strong> : <strong>cette commande sert à projeter les points d’une géométrie dans une autre, c’est-à-dire à recalculer les coordonnées selon un autre système de projection.</strong> Par exemple, si on désire produire une carte avec un fond <code>openstreetmaps</code> ou une carte dynamique <code>leaflet</code> à partir de données projetées en Lambert 93, il est nécessaire de re-projeter les données dans le système WGS 84 (code EPSG 4326).</li>
+<li><strong><code>sf::st_set_crs</code></strong> : cette commande sert à préciser quel est le système de projection utilisé, c’est-à-dire comment les coordonnées <em>(x,y)</em> sont reliées à la surface terrestre. <strong>Cette commande ne doit pas être utilisée pour transformer le système de coordonnées, seulement pour le définir</strong>.</li>
+<li><strong><code>sf::st_transform</code></strong> : <strong>cette commande sert à projeter les points d’une géométrie dans une autre, c’est-à-dire à recalculer les coordonnées selon un autre système de projection.</strong> Par exemple, si on désire produire une carte avec un fond <code>openstreetmaps</code> ou une carte dynamique <code>leaflet</code> à partir de données projetées en Lambert 93, il est nécessaire de re-projeter les données dans le système WGS 84 (code EPSG 4326).</li>
 </ul>
 <p>La définition du système de projection se fait de la manière suivante :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">martinique</span> <span class="op">&lt;-</span> <span class="va">martinique</span> <span class="op">%&gt;%</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_crs.html">st_set_crs</a></span><span class="op">(</span><span class="fl">32620</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>martinique <span class="ot">&lt;-</span> martinique <span class="sc">%&gt;%</span> sf<span class="sc">::</span><span class="fu">st_set_crs</span>(<span class="dv">32620</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Alors que la reprojection s’obtient de la manière suivante :</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">martinique</span> <span class="op">&lt;-</span> <span class="va">martinique</span> <span class="op">%&gt;%</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_transform.html">st_transform</a></span><span class="op">(</span><span class="fl">4326</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>martinique <span class="ot">&lt;-</span> martinique <span class="sc">%&gt;%</span> sf<span class="sc">::</span><span class="fu">st_transform</span>(<span class="dv">4326</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section></section><section id="pour-aller-plus-loin" class="level2"><h2 class="anchored" data-anchor-id="pour-aller-plus-loin">Pour aller plus loin</h2>
+</section>
+</section>
+<section id="pour-aller-plus-loin" class="level2">
+<h2 class="anchored" data-anchor-id="pour-aller-plus-loin">Pour aller plus loin</h2>
 <p>Selon le besoin exact, plusieurs autres <em>packages</em> proposent des fonctionnalités complémentaires :</p>
 <ul>
 <li>le <em>package</em> <code>raster</code> pour gérer le format de données de type maillage ;</li>
 <li>les <em>packages</em> pour l’analyse statistique spatiale :
 <ul>
-<li>
-<code>spdep</code> pour l’économétrie spatiale : relations de voisinage entre objets spatiaux, indices d’autocorrélation spatiale, … ;</li>
-<li>
-<code>spatstat</code> pour l’économétrie spatiale ;</li>
-<li>
-<code>gstat</code> et <code>geoR</code> pour la géostatistique ;</li>
-</ul>
-</li>
-<li>
-<code>btb</code> (produit par l’Insee) pour du lissage ;</li>
+<li><code>spdep</code> pour l’économétrie spatiale : relations de voisinage entre objets spatiaux, indices d’autocorrélation spatiale, … ;</li>
+<li><code>spatstat</code> pour l’économétrie spatiale ;</li>
+<li><code>gstat</code> et <code>geoR</code> pour la géostatistique ;</li>
+</ul></li>
+<li><code>btb</code> (produit par l’Insee) pour du lissage ;</li>
 <li>le <em>package</em> <code>rpostgis</code> pour interfacer <code>R</code> à une base de données <code>PostGIS</code>.</li>
-</ul></section><section id="où-trouver-des-données-géographiques-et-des-shapefiles" class="level2"><h2 class="anchored" data-anchor-id="où-trouver-des-données-géographiques-et-des-shapefiles">Où trouver des données géographiques et des <em>shapefiles</em> ?</h2>
+</ul>
+</section>
+<section id="où-trouver-des-données-géographiques-et-des-shapefiles" class="level2">
+<h2 class="anchored" data-anchor-id="où-trouver-des-données-géographiques-et-des-shapefiles">Où trouver des données géographiques et des <em>shapefiles</em> ?</h2>
 <p>Il s’agit du domaine où la diffusion de données par l’<em>open data</em> a permis une grande diversité des sources disponibles. Certaines données sont disponibles sous forme de <em>shapefiles</em>, d’autres avec des identifiants géographiques comme le code commune à apparier à un shapefile proposant la même variable.</p>
 <p>Les limites administratives de référence sont disponibles sur le site <a href="https://www.data.gouv.fr/fr/datasets/admin-express/">Admin Express</a> de l’IGN (anciennement <code>GeoFla</code>).</p>
 <p>Le code officiel géographique (COG), qui tient à jour les entités administratives (codes communes, régions, etc.) est disponible sur <a href="https://www.insee.fr/fr/information/2560452">le site de l’Insee</a> et via l’API Métadonnées. La <a href="https://book.utilitr.org/03_Fiches_thematiques/Fiche_api">fiche API</a> indique comment accéder à des données via une API.</p>
@@ -839,7 +880,7 @@ Note
 <div class="callout-body-container callout-body">
 <p>Ce package n’étant pas disponible sur le CRAN, dans un environnement connecté à internet, il est nécessaire de l’installer depuis <code>Github</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"antuki/COGugaison"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"antuki/COGugaison"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -870,20 +911,25 @@ Note
 <p>L’Insee propose un outil pour sélectionner et télécharger des données géographiques via l’application <code>creacartes</code>.</p>
 </div>
 </div>
-</section><section id="RessourcesDonneesSpatiales" class="level2"><h2 class="anchored" data-anchor-id="RessourcesDonneesSpatiales">Pour en savoir plus</h2>
+</section>
+<section id="RessourcesDonneesSpatiales" class="level2">
+<h2 class="anchored" data-anchor-id="RessourcesDonneesSpatiales">Pour en savoir plus</h2>
 <ul>
 <li>la documentation du <em>package</em> <code>sf</code> :
 <ul>
 <li>le <a href="http://r-spatial.github.io/sf">site officiel</a> du <em>package</em> ;</li>
 <li>la <a href="https://www.rdocumentation.org/packages/sf">documentation</a> du <em>package</em> ;</li>
 <li>la <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/sf.pdf"><em>cheatsheet</em></a> du <em>package</em> (en anglais) ;</li>
-</ul>
-</li>
+</ul></li>
 <li>un <a href="https://rcarto.github.io/carto_avec_r">tutoriel</a> détaillé sur les données spatiales et sur la cartographie avec <code>R</code> (en français).</li>
 </ul>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1297,7 +1343,8 @@ Note
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>   
@@ -1311,6 +1358,8 @@ Note
 </div>
   </div>
 </footer>
+
+
 
 
 </body></html>
