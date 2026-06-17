@@ -901,24 +901,24 @@ This warning is displayed once every 8 hours.</code></pre>
 <pre><code># A tibble: 18 × 2
    REG   NB_EQUIP_TOT
    &lt;chr&gt;        &lt;dbl&gt;
- 1 32          175859
- 2 75          237008
- 3 53          111291
+ 1 93          254405
+ 2 53          111291
+ 3 75          237008
  4 52          119689
- 5 01           23939
- 6 84          303775
- 7 11          469181
- 8 94           21778
- 9 04           30767
-10 06            7353
-11 76          256813
-12 44          181130
-13 03            7852
-14 28          107186
-15 02           19068
-16 24           81379
+ 5 32          175859
+ 6 01           23939
+ 7 76          256813
+ 8 44          181130
+ 9 03            7852
+10 28          107186
+11 02           19068
+12 84          303775
+13 11          469181
+14 94           21778
+15 04           30767
+16 06            7353
 17 27           96309
-18 93          254405</code></pre>
+18 24           81379</code></pre>
 </div>
 </div>
 </div>
@@ -1013,15 +1013,15 @@ LINE 1: SELECT DEP, SUM(NB_EQUIP * (TYPEQU = 'B203')) AS nb_boulangeries
 # Database: DuckDB 1.5.2 [root@Darwin 25.5.0:R 4.6.0/:memory:]
    DEP   nb_boulangeries
    &lt;chr&gt;           &lt;dbl&gt;
- 1 03                299
- 2 74                534
- 3 55                157
- 4 56                640
- 5 67                839
- 6 34               1016
- 7 72                396
- 8 972               370
- 9 976               101
+ 1 18                237
+ 2 52                155
+ 3 53                227
+ 4 58                191
+ 5 75               2032
+ 6 19                218
+ 7 34               1016
+ 8 82                197
+ 9 13               1626
 10 38                838
 # ℹ more rows</code></pre>
 </div>
@@ -1315,24 +1315,24 @@ Note
 # Database: DuckDB 1.5.2 [root@Darwin 25.5.0:R 4.6.0/:memory:]
    REG   NB_EQUIP_TOT
    &lt;chr&gt;        &lt;dbl&gt;
- 1 32          175859
- 2 11          469181
- 3 04           30767
- 4 06            7353
- 5 84          303775
- 6 94           21778
- 7 75          237008
- 8 53          111291
- 9 52          119689
-10 02           19068
-11 28          107186
-12 93          254405
-13 24           81379
-14 27           96309
-15 03            7852
-16 44          181130
-17 76          256813
-18 01           23939</code></pre>
+ 1 75          237008
+ 2 53          111291
+ 3 52          119689
+ 4 24           81379
+ 5 27           96309
+ 6 03            7852
+ 7 44          181130
+ 8 76          256813
+ 9 02           19068
+10 28          107186
+11 32          175859
+12 01           23939
+13 93          254405
+14 11          469181
+15 04           30767
+16 06            7353
+17 84          303775
+18 94           21778</code></pre>
 </div>
 </div>
 <p>Vous pouvez bien sûr lire des fichiers <code>Parquet</code>, <code>CSV</code> ou autres en utilisant les <a href="https://duckdb.org/docs/data/overview">fonctions de duckdb</a> :</p>
@@ -1661,7 +1661,7 @@ Or set PRAGMA temp_directory='/path/to/tmp.tmp'</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/nicotlm\.github\.io\/utilitR\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

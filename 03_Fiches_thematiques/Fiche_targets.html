@@ -680,7 +680,7 @@ Tip
 ✔ grandes_villes completed [6ms, 1.48 kB]
 + prop_sup_25k dispatched
 ✔ prop_sup_25k completed [3ms, 154 B]
-✔ ended pipeline [329ms, 2 completed, 2 skipped]
+✔ ended pipeline [326ms, 2 completed, 2 skipped]
 Warning message:
 In dir.create("data") : 'data' already exists</code></pre>
 </div>
@@ -755,8 +755,8 @@ Note
 <pre><code>+ grandes_villes dispatched
 ✔ grandes_villes completed [6ms, 70.69 kB]
 + prop_sup_25k dispatched
-✔ prop_sup_25k completed [3ms, 160 B]
-✔ ended pipeline [328ms, 2 completed, 2 skipped]
+✔ prop_sup_25k completed [2ms, 160 B]
+✔ ended pipeline [319ms, 2 completed, 2 skipped]
 Warning message:
 In dir.create("data") : 'data' already exists</code></pre>
 </div>
@@ -1115,7 +1115,7 @@ Note
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/nicotlm\.github\.io\/utilitR\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
